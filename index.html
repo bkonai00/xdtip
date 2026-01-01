@@ -195,7 +195,7 @@
                 <img src="https://xdfun.in/assets/logo.svg" alt="xdfunYT Logo" class="avatar">
             </div>
             <h1 class="username">xdfunYT</h1>
-            <p class="subtitle">Thanks for supporting the stream! <span class="heart">♥</span></p>
+            <p class="subtitle">Thanks for supporting xdfun! <span class="heart">♥</span></p>
         </div>
 
         <div class="card">
@@ -207,6 +207,8 @@
             </div>
 
             <div class="presets">
+                <button class="preset-btn" onclick="setAmount(10)">₹10</button>
+                <button class="preset-btn" onclick="setAmount(20)">₹20</button>
                 <button class="preset-btn" onclick="setAmount(50)">₹50</button>
                 <button class="preset-btn" onclick="setAmount(100)">₹100</button>
                 <button class="preset-btn" onclick="setAmount(200)">₹200</button>
@@ -217,13 +219,13 @@
             <input type="text" id="name" placeholder="Display Name">
 
             <label>Email Address</label>
-            <input type="email" id="email" placeholder="receipts@email.com">
+            <input type="email" id="email" placeholder="your@email.com">
 
             <label>Message</label>
-            <textarea id="message" maxlength="150" placeholder="Say something nice..." oninput="updateCounter()"></textarea>
+            <textarea id="message" maxlength="150" placeholder="Say something to xdfun." oninput="updateCounter()"></textarea>
             <div class="char-counter" id="char-count">0/150 chars</div>
 
-            <button class="donate-btn" onclick="payNow()">Send Support ♥</button>
+            <button class="donate-btn" onclick="payNow()">Send Tip</button>
         </div>
     </div>
 
@@ -304,7 +306,7 @@
                                 message: message
                             })
                         });
-                        alert("Donation Sent! Look at the stream!");
+                        alert("Thanks For Your Tip");
                         btn.innerText = "Sent!";
                     },
                     "modal": {
